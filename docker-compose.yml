@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  appbuild:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/var/www/html
+      - /var/www/html/node_modules
+
